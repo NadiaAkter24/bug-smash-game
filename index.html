@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bug Smash Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Bug Smash!</h1>
+    <p style="color:#ff385c; font-weight: 600; margin-top: 0; margin-bottom: 30px;">Created by Nadia Akter</p>
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <h2>Welcome to Bug Smash!</h2>
+    <p>Smash as many bugs as you can before time runs out!</p>
+    
+    <!-- Bug image preview -->
+    <img src="BUG.jpeg" alt="Bug preview" style="width:100px; margin: 15px auto; display: block;" />
+
+    <!-- Start Game button -->
+    <button id="show-name-btn" style="margin-top: 20px;">Start Game</button>
+
+    <!-- Hidden inputs for difficulty and name -->
+    <div id="name-entry" style="display:none; margin-top: 20px;">
+      <label for="difficulty">Select Difficulty:</label><br />
+      <select id="difficulty" style="margin-top: 10px; padding: 8px; font-size: 16px; border-radius: 6px; border: 2px solid #ff385c; width: 90%;">
+        <option value="easy">Easy</option>
+        <option value="intermediate" selected>Intermediate</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <label for="player-name" style="margin-top: 15px; display: block;">Enter your name:</label>
+      <input type="text" id="player-name" placeholder="Your name" />
+
+      <!-- High Score Display -->
+      <p id="high-score-display" style="margin-top: 10px; color: #ff385c; font-weight: 600;"></p>
+
+      <button id="start-button" style="margin-top: 10px;">Play</button>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-container" style="display: none;">
+    <p>Hello, <span id="player-display"></span>! Score: <span id="score">0</span></p>
+    <div id="game-area"></div>
+
+    <!-- Back Button -->
+    <button id="back-button" style="margin-top: 20px;">Back to Main Page</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

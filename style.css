@@ -1,0 +1,195 @@
+/* Body with colorful gradient background */
+body {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #333;
+}
+
+/* Title with shadow */
+h1 {
+  margin-top: 40px;
+  font-size: 48px;
+  color: #ff385c;
+  text-shadow: 2px 2px 5px #fbc7c7;
+}
+
+/* Start screen styling */
+#start-screen {
+  margin-top: 40px;
+  background: #fff0f6;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 20px rgba(255, 56, 92, 0.3);
+  width: 320px;
+}
+
+/* Input and button */
+#start-screen input {
+  padding: 12px;
+  font-size: 18px;
+  width: 90%;
+  border-radius: 8px;
+  border: 2px solid #ff385c;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#start-screen input:focus {
+  border-color: #ff6f91;
+}
+
+#start-screen button {
+  padding: 12px 25px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+#start-screen button:hover {
+  background-color: #ff6f91;
+}
+
+/* Game container styling */
+#game-container {
+  margin-top: 20px;
+  width: 650px;
+  background: #fff8f9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(255, 56, 92, 0.3);
+  color: #ff385c;
+  position: relative;
+}
+
+/* Score and timer text */
+#game-container p {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Game area */
+#game-area {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  border: 4px solid #ff385c;
+  border-radius: 15px;
+  background-color: #ffe6eb;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 20px #ffafbd;
+}
+
+/* Bug styling */
+.bug {
+  background-image: url('BUG.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.1s;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(255, 56, 92, 0.7);
+}
+
+.bug:active {
+  transform: scale(0.9);
+}
+
+/* Game over message */
+#game-over-message {
+  color: #ff385c;
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #fff0f6;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(255, 56, 92, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#game-over-message h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#game-over-message p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#game-over-message button {
+  padding: 12px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#game-over-message button:hover {
+  background-color: #ff6f91;
+}
+
+/* Back to Main Page button inside game screen */
+#back-button {
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+#back-button:hover {
+  background-color: #ff6f91;
+}
+
+/* Start screen extras */
+#start-screen h2 {
+  margin-bottom: 5px;
+  color: #ff385c;
+}
+
+#start-screen p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #a8324a;
+  font-weight: 600;
+}
+
+/* Optional animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Optional: Leaderboard placeholder styling */
+#leaderboard {
+  margin-top: 20px;
+  background: #ffe6eb;
+  border-radius: 10px;
+  padding: 15px;
+  color: #a8324a;
+  font-weight: bold;
+  display: none;
+}
